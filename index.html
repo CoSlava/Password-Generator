@@ -1,25 +1,28 @@
 <!doctype html>
 <html>
     <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>Generate a<br><span id="green">random password</span></h1>
-        <h2>Never use an insecure password again.</h2>
-        
-        <button onclick="generate()">Generate password</button>
-        
-        <form class="radio-btns">
-            <input type="radio" name="characters-lenght" id="eight-characters">
-            <label for="eight-characters">8 characters</label>
-            <span id="space"></span>
-            <input type="radio" name="characters-lenght" id="sixteen-char">
-            <label for="sixteen-char">16 characters</label>
-        </form>
-        <p id="alert"></p>
-        <div class="passwords">
-            <p id="password1" onclick="copyPasOne()"></p>
-            <p id="password2" onclick="copyPasTwo()"></p>
+        <div class="wrapper">
+            <h1>Generate a<br><span id="green">random password</span></h1>
+            <h2>Never use an insecure password again.</h2>
+            
+            <button onclick="generate()">Generate password</button>
+            
+            <form class="radio-btns">
+                <input type="radio" name="characters-lenght" id="eight-characters">
+                <label for="eight-characters">8 characters</label>
+                <span id="space"></span>
+                <input type="radio" name="characters-lenght" id="sixteen-char">
+                <label for="sixteen-char">16 characters</label>
+            </form>
+            <p id="alert"></p>
+            <div class="passwords">
+                <p id="password1" onclick="copyPasOne()"></p>
+                <p id="password2" onclick="copyPasTwo()"></p>
+            </div>
         </div>
         <script src="index.js"></script>
     </body>
